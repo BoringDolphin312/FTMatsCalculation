@@ -1,0 +1,25 @@
+MATERIAL  |  AMOUNT
+Cobblestone  |  58209
+Prismarine Brick Slab  |  18156
+Sandstone Slab  |  8019
+Birch Log  |  7677
+White Wool  |  7509
+Mushroom Stem  |  2703
+Glow Lichen  |  2160
+Light Blue Wool  |  1443
+Warped Wart Block  |  435
+Cyan Wool  |  327
+Warped Nylium  |  297
+Warped Stem  |  189
+White Terracotta  |  102
+Cyan Terracotta  |  42
+Gray Wool  |  18
+Lime Terracotta  |  18
+Block of Lapis Lazuli  |  15
+Green Wool  |  12
+Block of Iron  |  6
+Clay  |  6
+Grass Block  |  6
+Oak Log  |  6
+Blue Wool  |  3
+Light Blue Terracotta  |  3

@@ -1,0 +1,32 @@
++-----------------------+-------+---------+-----------------------------------------+
+| Material List for schematic 'IMG_6057_0_0 (Converted Structure)' (1 of 1 regions) |
++-----------------------+-------+---------+-----------------------------------------+
+| Item                  | Total | Missing |                               Available |
++-----------------------+-------+---------+-----------------------------------------+
+| Cobblestone           | 19403 |   19403 |                                       0 |
+| Prismarine Brick Slab |  6052 |    6052 |                                       0 |
+| Sandstone Slab        |  2673 |    2673 |                                       0 |
+| Birch Log             |  2559 |    2559 |                                       0 |
+| White Wool            |  2503 |    2503 |                                       0 |
+| Mushroom Stem         |   901 |     901 |                                       0 |
+| Glow Lichen           |   720 |     720 |                                       0 |
+| Light Blue Wool       |   481 |     481 |                                       0 |
+| Warped Wart Block     |   145 |     145 |                                       0 |
+| Cyan Wool             |   109 |     109 |                                       0 |
+| Warped Nylium         |    99 |      99 |                                       0 |
+| Warped Stem           |    63 |      63 |                                       0 |
+| White Terracotta      |    34 |      34 |                                       0 |
+| Cyan Terracotta       |    14 |      14 |                                       0 |
+| Gray Wool             |     6 |       6 |                                       0 |
+| Lime Terracotta       |     6 |       6 |                                       0 |
+| Block of Lapis Lazuli |     5 |       5 |                                       0 |
+| Green Wool            |     4 |       4 |                                       0 |
+| Block of Iron         |     2 |       2 |                                       0 |
+| Clay                  |     2 |       2 |                                       0 |
+| Grass Block           |     2 |       2 |                                       0 |
+| Oak Log               |     2 |       2 |                                       0 |
+| Blue Wool             |     1 |       1 |                                       0 |
+| Light Blue Terracotta |     1 |       1 |                                       0 |
++-----------------------+-------+---------+-----------------------------------------+
+| Item                  | Total | Missing |                               Available |
++-----------------------+-------+---------+-----------------------------------------+
