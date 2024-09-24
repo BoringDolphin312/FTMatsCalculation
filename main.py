@@ -20,10 +20,10 @@ def separate_teams(amount_teams=4):
     while index_team < amount_teams:
         team_list = []
 
-        for i in range(items_per_team):
+        for _ in range(items_per_team):
             team_list.append(item_list.pop(0))
 
-            if i == items_per_team:
+            if _ == items_per_team:
                 break
 
         complete_list_teams[team_name+str(index_team)] = team_list
@@ -42,12 +42,16 @@ def separate_teams(amount_teams=4):
 def get_mats(file_name):
     mat_list = []
     final_list = dict()
+    file_name_list = []
 
-    for i in file_name:
-        for line in open(path_list+"/"+i):
+    for _ in file_name:
+        file_name_list.append(_)
+        for line in open(path_list+"/"+_):
             res = re.findall(regex, line)
             if len(res):
                 mat_list.append(res[0])
+
+    final_list["schematic_files"] = file_name_list
 
     for mat in mat_list:
         if mat[0] not in final_list.keys():
@@ -57,7 +61,18 @@ def get_mats(file_name):
 
     return final_list
 
+def rename_files():
+    filename_regex = r'IMG_\d+_\d+_\d+'
+
+    for _ in os.listdir(path_list):
+        for line in open(path_list+"/"+_):
+            res = re.findall(filename_regex, line)
+            if len(res):
+                os.rename(path_list+"/"+_,path_list+"/"+res[0]+".txt")
+
+
 if __name__ == '__main__':
+    # rename_files() #TODO: Activate this function on when its time to go for real
     teams_division = separate_teams()
     for team in teams_division.keys():
         complete_list = get_mats(teams_division[team])
@@ -66,10 +81,17 @@ if __name__ == '__main__':
         f.close()
 
         f = open(path_output + "/" + team + ".txt", "w")
+        f.write(f"SCHEMATICS ON THIS LIST: \n")
+        for i in complete_list["schematic_files"]:
+            f.write(f"{i[0:-4]}, ")
+
+        f.write("\n\n")
         f.write("MATERIAL  |  AMOUNT\n")
         f.close()
 
         f = open(path_output+"/"+team+".txt", "a")
         for i in complete_list.keys():
+            if i == "schematic_files":
+                continue
             f.write(f"{i}  |  {complete_list[i]}\n")
         f.close()

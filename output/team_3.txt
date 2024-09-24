@@ -1,3 +1,6 @@
+SCHEMATICS ON THIS LIST: 
+10, 11, 2, 
+
 MATERIAL  |  AMOUNT
 Cobblestone  |  58209
 Prismarine Brick Slab  |  18156
