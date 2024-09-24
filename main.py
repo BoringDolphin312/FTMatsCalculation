@@ -57,12 +57,13 @@ def get_mats(file_name):
         if mat[0] not in final_list.keys():
             final_list[mat[0]] = int(mat[1])
         else:
-            final_list[mat[0]] = final_list[mat[0]] + int(mat[1])
+            if final_list[mat[0]] <= int(mat[1]):
+                final_list[mat[0]] = int(mat[1])
 
     return final_list
 
 def rename_files():
-    filename_regex = r'IMG_\d+_\d+_\d+'
+    filename_regex = r'\'(.*)\''
 
     for _ in os.listdir(path_list):
         for line in open(path_list+"/"+_):
